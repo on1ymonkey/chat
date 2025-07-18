@@ -90,7 +90,15 @@
         import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, collection, addDoc, query, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+       const firebaseConfig = {
+  apiKey: "AIzaSyAwCdMjW7otJ9zkYQBSRiqa3SW7HQEjiyA",
+  authDomain: "chat-7ac83.firebaseapp.com",
+  projectId: "chat-7ac83",
+  storageBucket: "chat-7ac83.firebasestorage.app",
+  messagingSenderId: "1067244815405",
+  appId: "1:1067244815405:web:74764d25b23d3388bba4a4",
+  measurementId: "G-70P29NMB73"
+};
         const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-chat-app';
 
         const app = initializeApp(firebaseConfig);
